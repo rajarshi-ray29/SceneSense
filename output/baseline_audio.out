@@ -1,0 +1,37 @@
+Starting Bimodal Training Pipeline...
+Epoch 1/20, Loss: 1.7501
+Epoch 2/20, Loss: 1.7037
+Epoch 3/20, Loss: 1.6474
+Epoch 4/20, Loss: 1.5867
+Epoch 5/20, Loss: 1.5430
+Epoch 6/20, Loss: 1.5235
+Epoch 7/20, Loss: 1.5074
+Epoch 8/20, Loss: 1.5070
+Epoch 9/20, Loss: 1.4970
+Epoch 10/20, Loss: 1.4945
+Epoch 11/20, Loss: 1.4884
+Epoch 12/20, Loss: 1.4969
+Epoch 13/20, Loss: 1.4908
+Epoch 14/20, Loss: 1.4770
+Epoch 15/20, Loss: 1.4903
+Epoch 16/20, Loss: 1.4779
+Epoch 17/20, Loss: 1.4735
+Epoch 18/20, Loss: 1.4646
+Epoch 19/20, Loss: 1.4650
+Epoch 20/20, Loss: 1.4642
+Test Loss: 1.4594
+              precision    recall  f1-score   support
+
+           0       0.53      0.92      0.67      1256
+           1       0.65      0.05      0.10       281
+           2       0.00      0.00      0.00        50
+           3       0.00      0.00      0.00       208
+           4       0.28      0.17      0.21       401
+           5       0.00      0.00      0.00        68
+           6       0.38      0.18      0.24       345
+
+    accuracy                           0.50      2609
+   macro avg       0.26      0.19      0.17      2609
+weighted avg       0.42      0.50      0.40      2609
+
+Job completed successfully

@@ -135,7 +135,7 @@ class UtteranceEmotionProcessor:
             test_audio_data = self._process_split_audio(self.test_utterances, test_audio_emb, skip_id=2052)
             
             # Save processed audio embeddings
-            with open('utterance_audio_embeddings.pkl', 'wb') as f:
+            with open('data/utterance_audio_embeddings.pkl', 'wb') as f:
                 pickle.dump((train_audio_data, val_audio_data, test_audio_data), f)
             
         except Exception as e:

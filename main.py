@@ -6,11 +6,12 @@ import torch.optim as optim
 from util import train_model, test_model
 import os
 
-# model = models.BaselineModel(use_text=True, use_audio=True, use_vision=True)
+model = models.BaselineModel(use_text=True, use_audio=True, use_vision=True)
 # model = models.CrossAttnFusionModel()
-model = models.HadamardFusionModel(use_text=True, use_audio=False, use_vision=True)
+# model = models.HadamardFusionModel(use_text=True, use_audio=False, use_vision=True)
+
 # For unimodal vision keep video=True, audio=True
-train_loader, val_loader, test_loader = data_loader.load_data(audio = False, text = True, vision = True)
+train_loader, val_loader, test_loader = data_loader.load_data(audio = True, text = True, vision = True)
 
 
 optimizer = optim.Adam(model.parameters(), lr=1e-4)
