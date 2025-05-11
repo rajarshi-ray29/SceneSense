@@ -1,3 +1,12 @@
+"""Team Members: Omkar Nabar, Rajarshi Ray, Khandaker Abid
+
+General Description:
+This driver script loads multimodal emotion classification data (text, audio, vision),
+initializes a model, trains it using a selected fusion architecture, and evaluates the model on a test set.
+Runtime Environment:
+System: NVIDIA Tesla V100, Ubuntu 18.04
+"""
+
 import models
 import data_loader
 import torch

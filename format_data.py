@@ -1,3 +1,26 @@
+"""
+Team Members:
+- Omkar Nabar
+- Rajarshi Ray
+- Khandaker Abid
+
+General Description:
+This script defines a class `UtteranceEmotionProcessor` used for processing multimodal utterance data (text, audio, and vision) 
+for emotion classification tasks. It loads and preprocesses data from the dataset given by the authors of MELD and FacialMMT, generating features and labels 
+suitable for training models.
+
+Runtime Environment:
+- GPU: NVIDIA Tesla V100
+- OS: Ubuntu 18.04
+
+NLP Concepts Used:
+I. Syntax | Classification:
+   - Label processing and conversion to one-hot vectors
+   - Splitting utterances into train/val/test sets
+II. Language Modeling | Transformers:
+   - Uses precomputed word embeddings, to be used in transformer models
+"""
+
 import numpy as np
 import pandas as pd
 import pickle
@@ -181,8 +204,8 @@ class UtteranceEmotionProcessor:
     
     def process_vision_embeddings(self):
         """
-        Load and process audio embeddings for all utterances.
-        Audio embeddings are loaded from the existing pickle file.
+        Load and process vision embeddings for all utterances.
+        Vision embeddings are loaded from the existing pickle file.
         """
         
         # Load audio embeddings

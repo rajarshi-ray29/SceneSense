@@ -1,3 +1,21 @@
+"""
+Team Members:
+- Omkar Nabar
+- Rajarshi Ray
+- Khandaker Abid
+
+General Description:
+This utility file contains training and testing functions for multimodal models using PyTorch.
+It handles batch unpacking, loss computation, gradient clipping, and model evaluation with detailed metrics.
+
+NLP Class Concepts Used:
+I. CrossEntropyLoss applied to one-hot encoded emotion labels.
+II.Models trained via stochastic optimization (Adam) and softmax-based prediction.
+
+Runtime Environment:
+System: NVIDIA Tesla V100, Ubuntu 18.04
+"""
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F

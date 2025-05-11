@@ -1,8 +1,31 @@
+"""
+Team Members:
+- Omkar Nabar
+- Rajarshi Ray
+- Khandaker Abid
+
+General Description:
+This module defines a PyTorch Dataset class and data loading utility for handling multimodal data—specifically text, audio, and vision embeddings—
+for emotion classification tasks. The dataset dynamically supports different combinations of modalities and returns samples as dictionaries.
+
+Runtime Environment:
+- GPU: NVIDIA Tesla V100
+- OS: Ubuntu 18.04
+
+NLP Concepts Used:
+I. Semantics:
+   - Embeddings represent semantic representations of utterances
+"""
+
 import pickle
 import torch
 from torch.utils.data import Dataset, DataLoader
 
 class MultimodalDataset(Dataset):
+    """
+    Custom PyTorch Dataset for multimodal inputs.
+    Handles optional modalities: audio, vision, and text embeddings.
+    """
     def __init__(self):
         self.audio = None
         self.vision = None
@@ -32,6 +55,10 @@ class MultimodalDataset(Dataset):
         return sample
 
 def load_data(audio=False, vision=False, text=False, batch_size=32, data_dir="./data"):
+    """
+    Load data from serialized pkl files and return PyTorch DataLoaders for train/val/test.
+    Each modality (audio, vision, text) is optional.
+    """
     if not (audio or vision or text):
         print("No modality selected.")
         return None, None, None

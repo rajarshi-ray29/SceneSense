@@ -14,7 +14,7 @@ source /home/rarray/anaconda3/etc/profile.d/conda.sh
 
 conda activate a4_cse538
 
-echo "Starting Bimodal Training Pipeline..."
+echo "Starting Training Pipeline..."
 python main.py
 
 conda deactivate
