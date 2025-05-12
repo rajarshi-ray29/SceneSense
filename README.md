@@ -29,6 +29,7 @@ The files present in the link:
 - audio_embeddings_feature_selection_emotion.pkl
 
 ## Project Structure
+```
 .
 ├── data/
 │ └── readme.txt # Link to download data
@@ -46,6 +47,7 @@ The files present in the link:
 ├── util.py # Training and evaluation utilities
 ├── requirements.txt # Dependencies
 └── README.md # Project documentation
+```
 
 ## Models
 We implemented and compared the following models:
