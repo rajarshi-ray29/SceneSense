@@ -1,3 +1,33 @@
+"""
+Team Members:
+- Omkar Nabar
+- Rajarshi Ray
+- Khandaker Abid
+
+General Description:
+This code implements a multi-modal neural network model using PyTorch to process and classify data from multiple modalities: text, audio, and vision.
+It consists of individual modality encoders for each data type (TextEncoder, AudioEncoder, VisionEncoder) and several fusion models like BaselineModel,
+CrossAttnFusionModel, and HadamardFusionModel that combine the features from these encoders to make predictions. These models are based on Transformer-based 
+architectures and attention mechanisms for cross-modal learning. The output is passed through a classifier to generate the final classification logits.
+
+NLP Class Concepts Used:
+- The TextEncoder, VisionEncoder, and AudioEncoder utilize transformer-based architectures (which inherently follow syntactic principles) to process sequences
+  and learn from them. The final classification layer in the models applies classification principles on the learned features.
+
+- The use of multi-modal encoders (TextEncoder, AudioEncoder, VisionEncoder) implicitly captures semantic features of the inputs. The fusion models (BaselineModel, 
+  CrossAttnFusionModel, HadamardFusionModel) probabilistically combine these features for classification. Cross-modal attention mechanisms and feature fusion also 
+  represent probabilistic interactions between modalities.
+
+- The TextEncoder utilizes a Transformer architecture, which is a key technique in modern language modeling. It processes textual input sequentially and captures
+  complex dependencies between words (syntax and semantics).
+
+- The various models applied in the code are customized for multi-modal classification tasks, making them suitable for applications such as image-text, text-audio, 
+  and multi-modal data fusion. The HadamardFusionModel and CrossAttnFusionModel are specific examples of custom statistical fusion techniques to process multi-modal data.
+
+System Information:
+Code executed on an NVIDIA Tesla V100 GPU with Ubuntu 18.04 operating system.
+"""
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
