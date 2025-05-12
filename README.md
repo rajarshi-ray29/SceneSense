@@ -38,7 +38,6 @@ The files present in the link:
 │ ├── crossattn_res_text_video.out
 │ ├── hadamard_audio_video.out
 │ └── ... (more log files)
-├── .gitignore # Git ignore rules
 ├── data_loader.py # Loads and preprocesses multimodal data
 ├── format_data.py # Script for formatting or transforming raw data
 ├── main.py # Driver script to select model, load data, and train
