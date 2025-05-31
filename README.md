@@ -4,8 +4,8 @@
 This project implements various deep learning models for multimodal emotion recognition using text, audio, and visual features extracted from the MELD dataset.
 
 ## Team Members
-- Omkar Nabar  116627832
 - Rajarshi Ray  116448554
+- Omkar Nabar  116627832
 - Khandaker Abid  115478345
 
 ## Table of Contents
